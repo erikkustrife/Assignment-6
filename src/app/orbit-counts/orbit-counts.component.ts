@@ -7,7 +7,7 @@ import { Satellite } from '../satellite';
   styleUrls: ['./orbit-counts.component.css']
 })
 export class OrbitCountsComponent implements OnInit {
-
+count=""
 	@Input() satellites: Satellite[];
 
   constructor() { }
@@ -24,6 +24,7 @@ export class OrbitCountsComponent implements OnInit {
 		 }
 	  }
 	}
+	console.log(count)
 	return count;
  }
 
